@@ -1,6 +1,6 @@
 import React from 'react';
 import { COLORS } from '../constants';
-import { Pill, Sparkles, AlertTriangle } from 'lucide-react';
+import { AlertTriangle } from 'lucide-react';
 
 export const PicksSection: React.FC = () => {
   return (
@@ -11,8 +11,13 @@ export const PicksSection: React.FC = () => {
       
       {/* Pick 1 */}
       <div className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 flex flex-col md:flex-row gap-6 items-start">
-        <div className="w-full md:w-1/3 bg-gray-50 rounded-xl h-48 flex items-center justify-center text-gray-300 shadow-inner">
-           <Pill size={64} strokeWidth={1.5} />
+        <div className="w-full md:w-1/3 bg-gray-50 rounded-xl h-48 overflow-hidden shadow-inner relative group">
+           <img 
+             src="https://images.unsplash.com/photo-1620916566398-39f1143ab7be?auto=format&fit=crop&q=80&w=800" 
+             alt="PDRN Serum"
+             className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+           />
+           <div className="absolute inset-0 bg-black/5 group-hover:bg-transparent transition-colors duration-300" />
         </div>
         <div className="w-full md:w-2/3">
           <div className="flex items-center gap-2 mb-2">
@@ -38,8 +43,13 @@ export const PicksSection: React.FC = () => {
 
       {/* Pick 2 */}
       <div className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 flex flex-col md:flex-row gap-6 items-start">
-        <div className="w-full md:w-1/3 bg-gray-50 rounded-xl h-48 flex items-center justify-center text-gray-300 shadow-inner">
-          <Sparkles size={64} strokeWidth={1.5} />
+        <div className="w-full md:w-1/3 bg-gray-50 rounded-xl h-48 overflow-hidden shadow-inner relative group">
+          <img 
+             src="https://images.unsplash.com/photo-1608248597279-f99d160bfbc8?auto=format&fit=crop&q=80&w=800" 
+             alt="Tone-up Sunscreen"
+             className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+           />
+           <div className="absolute inset-0 bg-black/5 group-hover:bg-transparent transition-colors duration-300" />
         </div>
         <div className="w-full md:w-2/3">
           <div className="flex items-center gap-2 mb-2">
